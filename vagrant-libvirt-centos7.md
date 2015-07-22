@@ -50,3 +50,41 @@ Installed the plugin 'vagrant-hostmanager (1.5.0)'!
         from /opt/rh/vagrant1/root/usr/share/vagrant/bin/vagrant:174:in `<main>'
 
 ```
+
+* Tried to install https://github.com/fog/fog-libvirt to resolve the above issue but got error as below
+
+```{r}
+[root@n56 c7]# sudo gem install fog-libvirt
+Fetching: builder-3.2.2.gem (100%)
+Successfully installed builder-3.2.2
+Fetching: excon-0.45.4.gem (100%)
+Successfully installed excon-0.45.4
+Fetching: formatador-0.2.5.gem (100%)
+Successfully installed formatador-0.2.5
+Fetching: mime-types-2.6.1.gem (100%)
+Successfully installed mime-types-2.6.1
+Fetching: net-ssh-2.9.2.gem (100%)
+Successfully installed net-ssh-2.9.2
+Fetching: net-scp-1.2.1.gem (100%)
+Successfully installed net-scp-1.2.1
+Fetching: fog-core-1.32.0.gem (100%)
+Successfully installed fog-core-1.32.0
+Fetching: multi_json-1.11.2.gem (100%)
+Successfully installed multi_json-1.11.2
+Fetching: fog-json-1.0.2.gem (100%)
+Successfully installed fog-json-1.0.2
+Fetching: mini_portile-0.6.2.gem (100%)
+Successfully installed mini_portile-0.6.2
+Fetching: nokogiri-1.6.6.2.gem (100%)
+Building native extensions.  This could take a while...
+ERROR:  Error installing fog-libvirt:
+        ERROR: Failed to build gem native extension.
+
+    /usr/bin/ruby extconf.rb
+mkmf.rb can't find header files for ruby at /usr/share/include/ruby.h
+
+
+Gem files will remain installed in /usr/local/share/gems/gems/nokogiri-1.6.6.2 for inspection.
+Results logged to /usr/local/share/gems/gems/nokogiri-1.6.6.2/ext/nokogiri/gem_make.out
+
+```
