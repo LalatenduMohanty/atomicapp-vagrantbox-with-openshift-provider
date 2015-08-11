@@ -1,4 +1,4 @@
-* To install Vagrant on CentOS refer: https://github.com/LalatenduMohanty/centos7-container-app-vagrant-box/blob/master/docs/quickstart.rst#centos 
+* To install Vagrant on CentOS refer: https://github.com/projectatomic/adb-atomic-developer-bundle/blob/master/docs/quickstart.rst#centos 
 * yum install ruby200-ruby-devel
 * yum install install gcc-c++
 * vagrant plugin install vagrant-hostmanager
